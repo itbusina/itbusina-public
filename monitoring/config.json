@@ -6,6 +6,36 @@
         "type": "PING",
         "label": "Demo Bamboo Wallboard",
         "params": { "hostname": "demo-bamboo.itbusina.com" }
+      },
+      {
+        "type": "PING",
+        "label": "Demo Jenkins Wallboard",
+        "params": { "hostname": "demo-jenkins.itbusina.com" }
+      },
+      {
+        "type": "PING",
+        "label": "Demo Sonar Wallboard",
+        "params": { "hostname": "demo-sonar.itbusina.com" }
+      },
+      {
+        "type": "PING",
+        "label": "Demo Dependencies Wallboard",
+        "params": { "hostname": "demo-dependencies.itbusina.com" }
+      },
+      {
+        "type": "HTTP",
+        "label": "ApiBee Cloud GitHub Action Status",
+        "url": "${API_URL}",
+        "refreshInterval": 60,
+        "http": {
+          "method": "GET",
+          "headers": [
+            {
+              "name": "Authorization",
+              "value": "Bearer ${API_TOKEN}"
+            }
+          ]
+        }
       }
     ]
   }
