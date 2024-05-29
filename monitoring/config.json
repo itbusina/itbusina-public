@@ -52,6 +52,13 @@
       }
     },
     {
+      "type": "PING",
+      "label": "MONITORING",
+      "params": {
+        "hostname": "monitor.itbusina.com"
+      }
+    },
+    {
       "type": "HTTP-STATUS",
       "params": {
         "url": "https://demo-bamboo.itbusina.com",
@@ -98,6 +105,13 @@
       "label": "ApiBee API Health",
       "params": {
         "url": "https://api.apibee.itbusina.com/api/Health",
+        "statusCodeMax": 200
+      }
+    },
+    {
+      "type": "HTTP-STATUS",
+      "params": {
+        "url": "https://monitor.itbusina.com",
         "statusCodeMax": 200
       }
     },
