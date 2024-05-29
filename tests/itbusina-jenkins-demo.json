@@ -1,0 +1,15 @@
+{
+    "name": "Jenkins Demo Dashboard Tests",
+    "baseAddress": "${{ vars.host }}",
+    "requests": [
+        {
+            "path": "/api/health"
+        },
+        {
+            "path": "/api/config"
+        },
+        {
+            "path": "/api/status/jobs"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "name": "SonarQube Demo Wallboard Tests", 
+    "baseAddress": "${{ vars.host }}",
+    "requests": [
+      {
+        "path": "/api/health"
+      },
+      {
+        "path": "/api/config"
+      },
+      {
+        "path": "/api/sonar/status"
+      },
+      {
+        "path": "/api/sonar/projects/measures"
+      },
+      {
+        "path": "/api/sonar/projects/statuses"
+      },
+      {
+        "path": "/api/sonar/projects"
+      },
+      {
+        "path": "/api/sonar/projects/history"
+      }
+    ]
+  }
