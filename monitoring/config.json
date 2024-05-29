@@ -4,7 +4,7 @@
     "tiles": [
       {
         "type": "PING",
-        "label": "Localhost",
+        "label": "Demo Bamboo Wallboard",
         "params": { "hostname": "demo-bamboo.itbusina.com" }
       }
     ]
