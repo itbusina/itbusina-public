@@ -1,40 +1,62 @@
 {
-    "version": "2.0",
-    "columns": 2,
-    "tiles": [
-      {
-        "type": "PING",
-        "label": "Demo Bamboo Wallboard",
-        "params": { "hostname": "demo-bamboo.itbusina.com" }
-      },
-      {
-        "type": "PING",
-        "label": "Demo Jenkins Wallboard",
-        "params": { "hostname": "demo-jenkins.itbusina.com" }
-      },
-      {
-        "type": "PING",
-        "label": "Demo Sonar Wallboard",
-        "params": { "hostname": "demo-sonar.itbusina.com" }
-      },
-      {
-        "type": "PING",
-        "label": "Demo Dependencies Wallboard",
-        "params": { "hostname": "demo-dependencies.itbusina.com" }
-      },
-      {
-        "type": "HTTP",
-        "label": "ApiBee Cloud GitHub Action Status",
-        "url": "${API_URL}",
-        "http": {
-          "method": "GET",
-          "headers": [
-            {
-              "name": "Authorization",
-              "value": "Bearer ${API_TOKEN}"
-            }
-          ]
-        }
+  "version": "2.0",
+  "columns": 2,
+  "tiles": [
+    {
+      "type": "PING",
+      "label": "Demo Bamboo Wallboard",
+      "params": {
+        "hostname": "demo-bamboo.itbusina.com"
       }
-    ]
-  }
+    },
+    {
+      "type": "PING",
+      "label": "Demo Jenkins Wallboard",
+      "params": {
+        "hostname": "demo-jenkins.itbusina.com"
+      }
+    },
+    {
+      "type": "PING",
+      "label": "Demo Sonar Wallboard",
+      "params": {
+        "hostname": "demo-sonar.itbusina.com"
+      }
+    },
+    {
+      "type": "PING",
+      "label": "Demo Dependencies Wallboard",
+      "params": {
+        "hostname": "demo-dependencies.itbusina.com"
+      }
+    },
+    {
+      "type": "HTTP-STATUS",
+      "params": {
+        "url": "https://demo-bamboo.itbusina.com",
+        "statusCodeMax": 200
+      }
+    },
+    {
+      "type": "HTTP-STATUS",
+      "params": {
+        "url": "https://demo-jenkins.itbusina.com",
+        "statusCodeMax": 200
+      }
+    },
+    {
+      "type": "HTTP-STATUS",
+      "params": {
+        "url": "https://demo-dependencies.itbusina.com",
+        "statusCodeMax": 200
+      }
+    },
+    {
+      "type": "HTTP-STATUS",
+      "params": {
+        "url": "https://demo-sonar.itbusina.com",
+        "statusCodeMax": 200
+      }
+    }
+  ]
+}
