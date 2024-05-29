@@ -46,7 +46,7 @@
     },
     {
       "type": "PING",
-      "label": "APIBEE HOME",
+      "label": "APIBEE API",
       "params": {
         "hostname": "api.apibee.itbusina.com"
       }
