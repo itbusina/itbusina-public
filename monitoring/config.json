@@ -3,26 +3,6 @@
   "columns": 3,
   "tiles": [
     {
-      "type": "GROUP",
-      "label": "Demo Bamboo Wallboard",
-      "tiles": [
-        {
-          "type": "PING",
-          "label": "Demo Bamboo Wallboard",
-          "params": {
-            "hostname": "demo-bamboo.itbusina.com"
-          }
-        },
-        {
-          "type": "HTTP-STATUS",
-          "params": {
-            "url": "https://demo-bamboo.itbusina.com",
-            "statusCodeMax": 200
-          }
-        }
-      ]
-    },
-    {
       "type": "PING",
       "label": "Demo Bamboo Wallboard",
       "params": {
