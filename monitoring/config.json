@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "columns": 2,
+  "columns": 3,
   "tiles": [
     {
       "type": "PING",
@@ -31,6 +31,27 @@
       }
     },
     {
+      "type": "PING",
+      "label": "IT BUSINA HOME",
+      "params": {
+        "hostname": "itbusina.com"
+      }
+    },
+    {
+      "type": "PING",
+      "label": "APIBEE HOME",
+      "params": {
+        "hostname": "apibee.itbusina.com"
+      }
+    },
+    {
+      "type": "PING",
+      "label": "APIBEE HOME",
+      "params": {
+        "hostname": "api.apibee.itbusina.com"
+      }
+    },
+    {
       "type": "HTTP-STATUS",
       "params": {
         "url": "https://demo-bamboo.itbusina.com",
@@ -55,6 +76,27 @@
       "type": "HTTP-STATUS",
       "params": {
         "url": "https://demo-sonar.itbusina.com",
+        "statusCodeMax": 200
+      }
+    },
+    {
+      "type": "HTTP-STATUS",
+      "params": {
+        "url": "https://itbusina.com",
+        "statusCodeMax": 200
+      }
+    },
+    {
+      "type": "HTTP-STATUS",
+      "params": {
+        "url": "https://apibee.itbusina.com",
+        "statusCodeMax": 200
+      }
+    },
+    {
+      "type": "HTTP-STATUS",
+      "params": {
+        "url": "https://api.apibee.itbusina.com/api/Health",
         "statusCodeMax": 200
       }
     }
