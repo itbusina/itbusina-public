@@ -26,7 +26,6 @@
         "type": "HTTP",
         "label": "ApiBee Cloud GitHub Action Status",
         "url": "${API_URL}",
-        "refreshInterval": 60,
         "http": {
           "method": "GET",
           "headers": [
