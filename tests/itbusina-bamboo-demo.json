@@ -1,6 +1,6 @@
 {
     "name": "Bamboo Demo Wallboard Tests",
-    "baseAddress": "${{host}}",
+    "baseAddress": "${{ vars.host }}",
     "requests": [
         {
             "path": "/api/health"
