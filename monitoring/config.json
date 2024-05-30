@@ -48,7 +48,7 @@
       "type": "PING",
       "label": "APIBEE API",
       "params": {
-        "hostname": "api.apibee.itbusina.com"
+        "hostname": "functions.apibee.itbusina.com"
       }
     },
     {
@@ -104,7 +104,7 @@
       "type": "HTTP-STATUS",
       "label": "ApiBee API Health",
       "params": {
-        "url": "https://api.apibee.itbusina.com/api/Health",
+        "url": "https://functions.apibee.itbusina.com/api/Health",
         "statusCodeMax": 200
       }
     },
@@ -119,7 +119,7 @@
       "type": "HTTP-FORMATTED",
       "label": "ApiBee Tests Quick Start",
       "params": {
-        "url": "https://api.apibee.itbusina.com/api/GetProject?clientId=Client1&projectId=848bb8db-e58a-4fcb-873a-71d7f9006c89",
+        "url": "https://functions.apibee.itbusina.com/api/GetProject?clientId=Client1&projectId=848bb8db-e58a-4fcb-873a-71d7f9006c89",
         "format": "JSON",
         "key": "status",
         "regex": "^(Success|Queued|InProgress)$"
@@ -129,7 +129,7 @@
       "type": "HTTP-FORMATTED",
       "label": "ApiBee Tests Bamboo",
       "params": {
-        "url": "https://api.apibee.itbusina.com/api/GetProject?clientId=Client1&projectId=74e4b79a-79d1-46ea-b137-3be358094154",
+        "url": "https://functions.apibee.itbusina.com/api/GetProject?clientId=Client1&projectId=74e4b79a-79d1-46ea-b137-3be358094154",
         "format": "JSON",
         "key": "status",
         "regex": "^(Success|Queued|InProgress)$"
@@ -139,7 +139,7 @@
       "type": "HTTP-FORMATTED",
       "label": "ApiBee Tests Dependencies",
       "params": {
-        "url": "https://api.apibee.itbusina.com/api/GetProject?clientId=Client1&projectId=ab73e469-7f43-41c3-8b01-a804f7da0e91",
+        "url": "https://functions.apibee.itbusina.com/api/GetProject?clientId=Client1&projectId=ab73e469-7f43-41c3-8b01-a804f7da0e91",
         "format": "JSON",
         "key": "status",
         "regex": "^(Success|Queued|InProgress)$"
@@ -149,7 +149,7 @@
       "type": "HTTP-FORMATTED",
       "label": "ApiBee Tests Jenkins",
       "params": {
-        "url": "https://api.apibee.itbusina.com/api/GetProject?clientId=Client1&projectId=dd2d24b0-3411-4e07-9910-d416bbb1b4d3",
+        "url": "https://functions.apibee.itbusina.com/api/GetProject?clientId=Client1&projectId=dd2d24b0-3411-4e07-9910-d416bbb1b4d3",
         "format": "JSON",
         "key": "status",
         "regex": "^(Success|Queued|InProgress)$"
@@ -159,7 +159,7 @@
       "type": "HTTP-FORMATTED",
       "label": "ApiBee Tests Sonar",
       "params": {
-        "url": "https://api.apibee.itbusina.com/api/GetProject?clientId=Client1&projectId=f58e4895-a6ce-4934-8186-0ac62e9c57dd",
+        "url": "https://functions.apibee.itbusina.com/api/GetProject?clientId=Client1&projectId=f58e4895-a6ce-4934-8186-0ac62e9c57dd",
         "format": "JSON",
         "key": "status",
         "regex": "^(Success|Queued|InProgress)$"
