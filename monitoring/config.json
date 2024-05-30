@@ -162,7 +162,7 @@
         "url": "https://api.apibee.itbusina.com/api/GetProject?clientId=Client1&projectId=f58e4895-a6ce-4934-8186-0ac62e9c57dd",
         "format": "JSON",
         "key": "status",
-        "regex": "^(Success|Queued)$"
+        "regex": "^(Success|Queued|InProgress)$"
       }
     }
   ]
