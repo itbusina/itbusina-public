@@ -39,14 +39,14 @@
     },
     {
       "type": "PING",
-      "label": "APIBEE HOME",
+      "label": "ApiBee HOME",
       "params": {
         "hostname": "apibee.itbusina.com"
       }
     },
     {
       "type": "PING",
-      "label": "APIBEE API",
+      "label": "ApiBee Functions",
       "params": {
         "hostname": "functions.apibee.itbusina.com"
       }
@@ -102,7 +102,7 @@
     },
     {
       "type": "HTTP-STATUS",
-      "label": "ApiBee API Health",
+      "label": "ApiBee Functions Health",
       "params": {
         "url": "https://functions.apibee.itbusina.com/api/Health",
         "statusCodeMax": 200
