@@ -3,13 +3,13 @@
     "baseAddress": "${{ vars.host }}",
     "requests": [
         {
-            "path": "/api/health"
+            "uri": "/api/health"
         },
         {
-            "path": "/api/config"
+            "uri": "/api/config"
         },
         {
-            "path": "/api/status/jobs"
+            "uri": "/api/status/jobs"
         }
     ]
 }

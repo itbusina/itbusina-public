@@ -3,25 +3,25 @@
     "baseAddress": "${{ vars.host }}",
     "requests": [
       {
-        "path": "/api/health"
+        "uri": "/api/health"
       },
       {
-        "path": "/api/config"
+        "uri": "/api/config"
       },
       {
-        "path": "/api/sonar/status"
+        "uri": "/api/sonar/status"
       },
       {
-        "path": "/api/sonar/projects/measures"
+        "uri": "/api/sonar/projects/measures"
       },
       {
-        "path": "/api/sonar/projects/statuses"
+        "uri": "/api/sonar/projects/statuses"
       },
       {
-        "path": "/api/sonar/projects"
+        "uri": "/api/sonar/projects"
       },
       {
-        "path": "/api/sonar/projects/history"
+        "uri": "/api/sonar/projects/history"
       }
     ]
   }
