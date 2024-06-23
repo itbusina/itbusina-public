@@ -22,6 +22,9 @@
       },
       {
         "uri": "/api/sonar/projects/history"
+      },
+      {
+        "uri": "/api/sonar/projects/favorites"
       }
     ]
   }
