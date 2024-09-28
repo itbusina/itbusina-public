@@ -1,5 +1,5 @@
 name: Bamboo Demo Wallboard Tests
-baseAddress: ${{ vars.host }}
+baseUrl: ${{ vars.host }}
 requests:
   - uri: /api/health
   - uri: /api/config
