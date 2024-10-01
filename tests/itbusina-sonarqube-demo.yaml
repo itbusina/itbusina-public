@@ -1,11 +1,11 @@
 name: SonarQube Demo Wallboard Tests
 baseUrl: ${{ vars.host }}
 requests:
-  - uri: /api/health
-  - uri: /api/config
-  - uri: /api/sonar/status
-  - uri: /api/sonar/projects/measures
-  - uri: /api/sonar/projects/statuses
-  - uri: /api/sonar/projects
-  - uri: /api/sonar/projects/history
-  - uri: /api/sonar/projects/favorites
+  - url: /api/health
+  - url: /api/config
+  - url: /api/sonar/status
+  - url: /api/sonar/projects/measures
+  - url: /api/sonar/projects/statuses
+  - url: /api/sonar/projects
+  - url: /api/sonar/projects/history
+  - url: /api/sonar/projects/favorites
