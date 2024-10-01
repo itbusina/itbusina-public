@@ -1,6 +1,6 @@
 name: Jenkins Demo Dashboard Tests
 baseUrl: ${{ vars.host }}
 requests:
-  - uri: /api/health
-  - uri: /api/config
-  - uri: /api/status/jobs
+  - url: /api/health
+  - url: /api/config
+  - url: /api/status/jobs
