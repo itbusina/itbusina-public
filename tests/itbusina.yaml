@@ -10,3 +10,12 @@ requests:
   - url: https://docs.apibee.itbusina.com/
   - url: https://docs.apibee.itbusina.com/terms-of-use
   - url: https://docs.apibee.itbusina.com/privacy-policy
+  - url: https://hub.docker.com/r/itbusina/apibee-portal
+  - url: https://hub.docker.com/r/itbusina/apibee
+  - url: https://hub.docker.com/r/itbusina/apibee-api
+  - url: https://hub.docker.com/r/itbusina/apibee-mock
+  - url: https://hub.docker.com/r/itbusina/leadersboard
+  - url: https://hub.docker.com/r/itbusina/sonarqube-wallboard
+  - url: https://hub.docker.com/r/itbusina/jenkins-wallboard
+  - url: https://hub.docker.com/r/itbusina/bamboo-wallboard
+  - url: https://hub.docker.com/r/itbusina/dependencies-dashboard
