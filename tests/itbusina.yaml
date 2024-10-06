@@ -1,13 +1,7 @@
 name: IT BUSINA TESTS
 requests:
-  - url: https://itbusina.com
   - url: https://itbusina.com/products/apibee
   - url: https://itbusina.com/products/apibee/contact
-  - url: https://portal.apibee.itbusina.com/health
-  - url: https://api.apibee.itbusina.com/health
-  - url: https://apibee-mock.itbusina.com/health
-  - url: https://functions.apibee.itbusina.com/api/health
-  - url: https://docs.apibee.itbusina.com/
   - url: https://docs.apibee.itbusina.com/terms-of-use
   - url: https://docs.apibee.itbusina.com/privacy-policy
   - url: https://hub.docker.com/v2/repositories/itbusina/apibee-portal
@@ -19,3 +13,47 @@ requests:
   - url: https://hub.docker.com/v2/repositories/itbusina/jenkins-wallboard
   - url: https://hub.docker.com/v2/repositories/itbusina/bamboo-wallboard
   - url: https://hub.docker.com/v2/repositories/itbusina/dependencies-dashboard
+  - url: https://itbusina.com
+    validators:
+    - is-successful: true
+    - ssl-expiration-after: 30d
+  - url: https://portal.apibee.itbusina.com/health
+    validators:
+    - is-successful: true
+    - ssl-expiration-after: 30d
+  - url: https://api.apibee.itbusina.com/health
+    validators:
+    - is-successful: true
+    - ssl-expiration-after: 30d
+  - url: https://apibee-mock.itbusina.com/health
+    validators:
+    - is-successful: true
+    - ssl-expiration-after: 30d
+  - url: https://functions.apibee.itbusina.com/api/health
+    validators:
+    - is-successful: true
+    - ssl-expiration-after: 30d
+  - url: https://docs.apibee.itbusina.com
+    validators:
+    - is-successful: true
+    - ssl-expiration-after: 30d
+  - url: https://leadersboard.itbusina.com
+    validators:
+    - is-successful: true
+    - ssl-expiration-after: 30d
+  - url: https://demo-sonar.itbusina.com
+    validators:
+    - is-successful: true
+    - ssl-expiration-after: 30d
+  - url: https://demo-bamboo.itbusina.com
+    validators:
+    - is-successful: true
+    - ssl-expiration-after: 30d
+  - url: https://demo-dependencies.itbusina.com
+    validators:
+    - is-successful: true
+    - ssl-expiration-after: 30d
+  - url: https://demo-jenkins.itbusina.com/
+    validators:
+    - is-successful: true
+    - ssl-expiration-after: 30d
