@@ -2,8 +2,8 @@ name: IT BUSINA TESTS
 requests:
   - url: https://itbusina.com/products/apibee
   - url: https://itbusina.com/products/apibee/contact
-  - url: https://docs.apibee.itbusina.com/terms-of-use
-  - url: https://docs.apibee.itbusina.com/privacy-policy
+  - url: https://docs.apibee.itbusina.com/terms-of-use/
+  - url: https://docs.apibee.itbusina.com/privacy-policy/
   - url: https://hub.docker.com/v2/repositories/itbusina/apibee-portal
   - url: https://hub.docker.com/v2/repositories/itbusina/apibee
   - url: https://hub.docker.com/v2/repositories/itbusina/apibee-api
