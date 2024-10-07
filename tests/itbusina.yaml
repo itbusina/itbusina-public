@@ -19,6 +19,13 @@ requests:
     - ssl-expiration-after: 30d
     - domain-expiration-after: 30d
   - url: https://itbusina.net
+    headers:
+    - 'User-Agent:apibee'
+    validators:
+    - is-successful: false
+  - url: http://itbusina.net
+    headers:
+    - 'User-Agent:apibee'
     validators:
     - is-successful: true
     - status-code: 301
