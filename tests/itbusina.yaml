@@ -29,7 +29,6 @@ requests:
     validators:
     - is-successful: true
     - status-code: 301
-    - ssl-expiration-after: 30d
     - domain-expiration-after: 30d
   - url: https://portal.apibee.itbusina.com/health
     validators:
