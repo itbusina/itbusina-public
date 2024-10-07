@@ -27,7 +27,6 @@ requests:
     headers:
     - 'User-Agent:apibee'
     validators:
-    - is-successful: true
     - status-code: 301
     - domain-expiration-after: 30d
   - url: https://portal.apibee.itbusina.com/health
