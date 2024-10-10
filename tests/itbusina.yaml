@@ -69,3 +69,7 @@ requests:
     validators:
     - is-successful: true
     - ssl-expiration-after: 30d
+  - url: https://itbusina.com
+    validators:
+    - sitemap-each-body-contains: "itbusina"
+    - sitemap-each-body-not-contains: "itbusino"
