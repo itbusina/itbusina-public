@@ -74,7 +74,12 @@ requests:
     - sitemap-each-body-contains: "itbusina"
     - sitemap-each-body-not-contains: "itbusino"
   - url: https://itbusina.com
+    name: DMARC DNS tests
     validators:
-    - dmarc-published: true
-    - dmarc-single-record: true
-    - dmarc-strict-policy: true
+    - dns-dmarc-exists: true
+    - dns-dmarc-single-record: true
+    - dns-dmarc-strict-policy: true
+  - url: https://itbusina.com
+    name: SPF DNS tests
+    validators:
+    - dns-spf-exists: true
