@@ -84,6 +84,10 @@ requests:
     validators:
     - dns-spf-exists: true
   - url: https://itbusina.com
+    name: DKIM DNS tests
+    validators:
+    - dns-dkim-exists: true
+  - url: https://itbusina.com
     name: DNS config tests
     validators:
     - dns-record-exists: "A:@:35.71.142.77"
