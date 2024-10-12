@@ -73,3 +73,8 @@ requests:
     validators:
     - sitemap-each-body-contains: "itbusina"
     - sitemap-each-body-not-contains: "itbusino"
+  - url: https://itbusina.com
+    validators:
+    - dmarc-published: true
+    - dmarc-single-record: true
+    - dmarc-strict-policy: true
