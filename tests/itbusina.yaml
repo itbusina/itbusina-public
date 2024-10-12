@@ -14,77 +14,86 @@ requests:
   - url: https://hub.docker.com/v2/repositories/itbusina/bamboo-wallboard
   - url: https://hub.docker.com/v2/repositories/itbusina/dependencies-dashboard
   - url: https://itbusina.com
+    name: SSL expiration after 30d, Domain name expiration after 30d
     validators:
     - is-successful: true
     - ssl-expiration-after: 30d
     - domain-expiration-after: 30d
-  - url: https://itbusina.net
+  - url: http://itbusina.net
+    name: http://itbusina.net returns 301, domain name expiration after 30d
     headers:
     - 'User-Agent:apibee'
     validators:
     - is-successful: false
-  - url: http://itbusina.net
-    headers:
-    - 'User-Agent:apibee'
-    validators:
     - status-code: 301
     - domain-expiration-after: 30d
   - url: https://portal.apibee.itbusina.com/health
+    name: ApiBee Portal is healthy and SSL expiration after 30d
     validators:
     - is-successful: true
     - ssl-expiration-after: 30d
   - url: https://api.apibee.itbusina.com/health
+    name: ApiBee API is healthy and SSL expiration after 30d
     validators:
     - is-successful: true
     - ssl-expiration-after: 30d
   - url: https://apibee-mock.itbusina.com/health
+    name: ApiBee Mock is healthy and SSL expiration after 30d
     validators:
     - is-successful: true
     - ssl-expiration-after: 30d
   - url: https://functions.apibee.itbusina.com/api/health
+    name: ApiBee Functions is healthy and SSL expiration after 30d
     validators:
     - is-successful: true
     - ssl-expiration-after: 30d
   - url: https://docs.apibee.itbusina.com
+    name: ApiBee Documentaiton is healthy and SSL expiration after 30d
     validators:
     - is-successful: true
     - ssl-expiration-after: 30d
   - url: https://leadersboard.itbusina.com
+    name: IT Busina Leadersboard is healthy and SSL expiration after 30d
     validators:
     - is-successful: true
     - ssl-expiration-after: 30d
   - url: https://demo-sonar.itbusina.com
+    name: IT Busina Demo Sonar is healthy and SSL expiration after 30d
     validators:
     - is-successful: true
     - ssl-expiration-after: 30d
   - url: https://demo-bamboo.itbusina.com
+    name: IT Busina Demo Bamboo CI is healthy and SSL expiration after 30d
     validators:
     - is-successful: true
     - ssl-expiration-after: 30d
   - url: https://demo-dependencies.itbusina.com
+    name: IT Busina Demo Dependencies is healthy and SSL expiration after 30d
     validators:
     - is-successful: true
     - ssl-expiration-after: 30d
   - url: https://demo-jenkins.itbusina.com/
+    name: IT Busina Demo Jenkins is healthy and SSL expiration after 30d
     validators:
     - is-successful: true
     - ssl-expiration-after: 30d
   - url: https://itbusina.com
+    name: All pages containt 'itbusina', no pages contain 'itbusino'
     validators:
     - sitemap-each-body-contains: "itbusina"
     - sitemap-each-body-not-contains: "itbusino"
   - url: https://itbusina.com
-    name: DMARC DNS tests
+    name: DMARC record exists, single record and strict policy enabled
     validators:
     - dns-dmarc-exists: true
     - dns-dmarc-single-record: true
     - dns-dmarc-strict-policy: true
   - url: https://itbusina.com
-    name: SPF DNS tests
+    name: SPF record exists
     validators:
     - dns-spf-exists: true
   - url: https://itbusina.com
-    name: DKIM DNS tests
+    name: DKIM record exists
     validators:
     - dns-dkim-exists: true
   - url: https://itbusina.com
@@ -96,8 +105,18 @@ requests:
     - dns-record-exists: "A:apibee:3.33.251.168"
     - dns-record-exists: "NS:@:ns51.domaincontrol.com."
     - dns-record-exists: "NS:@:ns52.domaincontrol.com."
+    - dns-record-exists: "TXT:@:openai-domain-verification=dv-QcsNbSXgPDxhulMtSm9jRlnZ"
+    - dns-record-exists: "TXT:@:seobility=56280a0d72a7d70133c1ed7a3add3d63"
+    - dns-record-exists: "TXT:@:google-site-verification=DHYt7xmEfOvLAacbT-YM_JZaXvrJvyytpyT9K1hS2Ek"
+    - dns-record-exists: "TXT:@:google-site-verification=UEO85xKZhz4ImEPheyMgnR2qZ8yr4jQA6kPRc3Z1byg"
     - dns-record-exists: "TXT:@:NETORGFT10816873.onmicrosoft.com"
     - dns-record-exists: "TXT:@:NETORGFT14523610.onmicrosoft.com"
+    - dns-record-exists: "TXT:_gh-itbusina-o:beb592ffae"
+    - dns-record-exists: "TXT:_gh-itbusina-o.docs.apibee:587079b09e"
+    - dns-record-exists: "TXT:_gh-itbusina-o.docs.apibee:c250e1c7e0"
+    - dns-record-exists: "TXT:_gh-itbusina-o.www:d61853241b"
+    - dns-record-exists: "TXT:_github-pages-challenge-itbusina:36dd2bf1b24e6ac5531843f19a3438"
+    - dns-record-exists: "TXT:_github-pages-challenge-itbusina.docs.apibee:635e17098eb6126091652aef570b18"
     - dns-record-exists: "CNAME:api.apibee:apibee-api.azurewebsites.net."
     - dns-record-exists: "CNAME:apibee-mock:apibee-mock.azurewebsites.net."
     - dns-record-exists: "CNAME:demo-bamboo:itbusina-bamboo-demo.azurewebsites.net."
