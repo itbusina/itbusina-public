@@ -83,3 +83,25 @@ requests:
     name: SPF DNS tests
     validators:
     - dns-spf-exists: true
+  - url: https://itbusina.com
+    name: DNS config tests
+    validators:
+    - dns-record-exists: "A:@:35.71.142.77"
+    - dns-record-exists: "A:@:52.223.52.2"
+    - dns-record-exists: "A:apibee:15.197.225.128"
+    - dns-record-exists: "A:apibee:3.33.251.168"
+    - dns-record-exists: "NS:@:ns51.domaincontrol.com."
+    - dns-record-exists: "NS:@:ns52.domaincontrol.com."
+    - dns-record-exists: "TXT:@:NETORGFT10816873.onmicrosoft.com"
+    - dns-record-exists: "TXT:@:NETORGFT14523610.onmicrosoft.com"
+    - dns-record-exists: "CNAME:api.apibee:apibee-api.azurewebsites.net."
+    - dns-record-exists: "CNAME:apibee-mock:apibee-mock.azurewebsites.net."
+    - dns-record-exists: "CNAME:demo-bamboo:itbusina-bamboo-demo.azurewebsites.net."
+    - dns-record-exists: "CNAME:demo-dependencies:itbusina-dependencies-demo.azurewebsites.net."
+    - dns-record-exists: "CNAME:demo-jenkins:itbusina-jenkins-demo.azurewebsites.net."
+    - dns-record-exists: "CNAME:demo-sonar:itbusina-sonarqube-demo.azurewebsites.net."
+    - dns-record-exists: "CNAME:docs.apibee:itbusina.github.io."
+    - dns-record-exists: "CNAME:functions.apibee:functions-apibee.azurewebsites.net."
+    - dns-record-exists: "CNAME:leadersboard:itbusina-leadersboard.azurewebsites.net."
+    - dns-record-exists: "CNAME:portal.apibee:apibee-portal.azurewebsites.net."
+    - dns-record-exists: "CNAME:www:sites.framer.app."
