@@ -4,9 +4,9 @@ requests:
     name: Health check
   - url: https://itbusina.com/products/apibee/contact
     name: Health check
-  - url: https://docs.apibee.itbusina.com/terms-of-use/
+  - url: https://docs.apibee.app/terms-of-use/
     name: Health check
-  - url: https://docs.apibee.itbusina.com/privacy-policy/
+  - url: https://docs.apibee.app/privacy-policy/
     name: Health check
   - url: https://hub.docker.com/v2/repositories/itbusina/apibee-portal
     name: Health check
@@ -60,7 +60,7 @@ requests:
     validators:
     - is-successful: true
     - ssl-expiration-after: 30d
-  - url: https://docs.apibee.itbusina.com
+  - url: https://docs.apibee.app
     name: ApiBee Documentaiton is healthy and SSL expiration after 30d
     validators:
     - is-successful: true
