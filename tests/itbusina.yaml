@@ -136,7 +136,6 @@ requests:
     - dns-record-exists: "CNAME:demo-dependencies:itbusina-dependencies-demo.azurewebsites.net."
     - dns-record-exists: "CNAME:demo-jenkins:itbusina-jenkins-demo.azurewebsites.net."
     - dns-record-exists: "CNAME:demo-sonar:itbusina-sonarqube-demo.azurewebsites.net."
-    - dns-record-exists: "CNAME:docs.apibee:itbusina.github.io."
     - dns-record-exists: "CNAME:functions.apibee:functions-apibee.azurewebsites.net."
     - dns-record-exists: "CNAME:leadersboard:itbusina-leadersboard.azurewebsites.net."
     - dns-record-exists: "CNAME:portal.apibee:apibee-portal.azurewebsites.net."
