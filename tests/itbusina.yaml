@@ -143,8 +143,8 @@ requests:
   - url: https://itbusina.com
     name: itbusina.com TLS 1.2
     validators:
-    - tls-version: Tls12
+    - tls-version: Tls13
   - url: https://apibee.app
     name: apibee.app TLS 1.2
     validators:
-    - tls-version: Tls12
+    - tls-version: Tls13
