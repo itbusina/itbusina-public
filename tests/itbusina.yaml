@@ -140,3 +140,11 @@ requests:
     - dns-record-exists: "CNAME:leadersboard:itbusina-leadersboard.azurewebsites.net."
     - dns-record-exists: "CNAME:portal.apibee:apibee-portal.azurewebsites.net."
     - dns-record-exists: "CNAME:www:sites.framer.app."
+  - url: https://itbusina.com
+    name: itbusina.com TLS 1.2
+    validators:
+    - tls-version: Tls12
+  - url: https://apibee.app
+    name: apibee.app TLS 1.2
+    validators:
+    - tls-version: Tls12
