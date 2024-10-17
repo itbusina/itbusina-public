@@ -55,7 +55,7 @@ requests:
     validators:
     - is-successful: true
     - ssl-expiration-after: 30d
-   - url: https://functions.apibee.itbusina.com/api/health
+  - url: https://functions.apibee.itbusina.com/api/health
     name: ApiBee Functions SSL expiration after 30d
     validators:
     - ssl-expiration-after: 30d
