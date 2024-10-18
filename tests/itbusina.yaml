@@ -159,3 +159,11 @@ requests:
     - tls-version-equals: Tls13
     - tls-version-equals: Tls12
     - tls-version-not-equals: Tls11
+  - url: https://itbusina.com
+    name: No links to docs.apibee.itbusina.com
+    validators:
+    - sitemap-each-body-not-contains: docs.apibee.itbusina.com
+  - url: https://itbusina.com
+    name: No links to portal.apibee.itbusina.com
+    validators:
+    - sitemap-each-body-not-contains: portal.apibee.itbusina.com
