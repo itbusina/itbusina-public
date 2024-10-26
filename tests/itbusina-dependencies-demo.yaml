@@ -1,0 +1,6 @@
+name: Dependencies Demo Dashboard Tests
+baseUrl: ${{ vars.host }}
+requests:
+  - url: /api/health
+  - url: /api/config
+  - url: /api/dependencies

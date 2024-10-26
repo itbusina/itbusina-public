@@ -1,0 +1,5 @@
+name: Leadersboard Tests
+baseUrl: ${{ vars.host }}
+requests:
+  - url: /health
+  - url: /?organization=ollama&repositories=&date=2024-09
