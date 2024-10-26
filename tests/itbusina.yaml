@@ -116,8 +116,12 @@ tests:
     name: DKIM record exists
     validators:
     - dns-dkim-exists: true
-  - url: https://testlemon.com
+  - url: https://www.testlemon.com
     name: TestLemon landing site is up
+  - url: https://testlemon.com
+    name: TestLemon redirect to www
+    validators:
+    - status-code: 301
   - url: https://itbusina.com
     name: DNS config tests
     validators:
@@ -155,8 +159,8 @@ tests:
   - url: https://testlemon.com
     name: Test https://testlemon.com Tls11, Tls12 and Tls13
     validators:
-    - tls-version-not-equals: Tls13
-    - tls-version-equals: Tls12
+    - tls-version-equals: Tls13
+    - tls-version-not-equals: Tls12
     - tls-version-not-equals: Tls11
   - url: https://itbusina.com
     name: No links to docs.apibee.itbusina.com
