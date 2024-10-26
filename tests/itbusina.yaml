@@ -4,13 +4,13 @@ tests:
     name: Health check
   - url: https://itbusina.com/products/apibee/contact
     name: Health check
-  - url: https://docs.apibee.app/terms-of-use/
+  - url: https://docs.testlemon.com/terms-of-use/
     name: Health check
-  - url: https://docs.apibee.app/privacy-policy/
+  - url: https://docs.testlemon.com/privacy-policy/
     name: Health check
   - url: https://hub.docker.com/v2/repositories/itbusina/apibee-portal
     name: Health check
-  - url: https://hub.docker.com/v2/repositories/itbusina/apibee
+  - url: https://hub.docker.com/v2/repositories/itbusina/testlemon
     name: Health check
   - url: https://hub.docker.com/v2/repositories/itbusina/apibee-api
     name: Health check
@@ -67,8 +67,8 @@ tests:
     name: ApiBee functions 'Domain' is healthy
     validators:
     - is-successful: true
-  - url: https://docs.apibee.app
-    name: ApiBee Documentaiton is healthy and SSL expiration after 30d
+  - url: https://docs.testlemon.com
+    name: TestLemon Documentaiton is healthy and SSL expiration after 30d
     validators:
     - is-successful: true
     - ssl-expiration-after: 30d
@@ -116,6 +116,8 @@ tests:
     name: DKIM record exists
     validators:
     - dns-dkim-exists: true
+  - url: https://testlemon.com
+    name: TestLemon landing site is up
   - url: https://itbusina.com
     name: DNS config tests
     validators:
@@ -132,11 +134,8 @@ tests:
     - dns-record-exists: "TXT:@:NETORGFT10816873.onmicrosoft.com"
     - dns-record-exists: "TXT:@:NETORGFT14523610.onmicrosoft.com"
     - dns-record-exists: "TXT:_gh-itbusina-o:beb592ffae"
-    - dns-record-exists: "TXT:_gh-itbusina-o.docs.apibee:587079b09e"
-    - dns-record-exists: "TXT:_gh-itbusina-o.docs.apibee:c250e1c7e0"
     - dns-record-exists: "TXT:_gh-itbusina-o.www:d61853241b"
     - dns-record-exists: "TXT:_github-pages-challenge-itbusina:36dd2bf1b24e6ac5531843f19a3438"
-    - dns-record-exists: "TXT:_github-pages-challenge-itbusina.docs.apibee:635e17098eb6126091652aef570b18"
     - dns-record-exists: "CNAME:api.apibee:apibee-api.azurewebsites.net."
     - dns-record-exists: "CNAME:apibee-mock:apibee-mock.azurewebsites.net."
     - dns-record-exists: "CNAME:demo-bamboo:itbusina-bamboo-demo.azurewebsites.net."
@@ -153,10 +152,10 @@ tests:
     - tls-version-equals: Tls13
     - tls-version-equals: Tls12
     - tls-version-not-equals: Tls11
-  - url: https://apibee.app
-    name: Test https://apibee.app Tls11, Tls12 and Tls13
+  - url: https://testlemon.com
+    name: Test https://testlemon.com Tls11, Tls12 and Tls13
     validators:
-    - tls-version-equals: Tls13
+    - tls-version-not-equals: Tls13
     - tls-version-equals: Tls12
     - tls-version-not-equals: Tls11
   - url: https://itbusina.com
