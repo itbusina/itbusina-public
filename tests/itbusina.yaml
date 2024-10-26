@@ -1,5 +1,5 @@
 name: IT BUSINA TESTS
-requests:
+tests:
   - url: https://itbusina.com/products/apibee
     name: Health check
   - url: https://itbusina.com/products/apibee/contact
