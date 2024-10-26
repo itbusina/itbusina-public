@@ -1,7 +1,7 @@
 {
     "name": "Jenkins Demo Dashboard Tests",
     "baseAddress": "${{ vars.host }}",
-    "requests": [
+    "tests": [
         {
             "uri": "/api/health"
         },
