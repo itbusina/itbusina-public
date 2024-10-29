@@ -118,12 +118,7 @@ tests:
   - url: https://www.testlemon.com
     name: TestLemon landing site is up
   - url: https://testlemon.com
-    name: TestLemon redirects (301) to www
-    headers:
-    - 'User-Agent:testlemon'
-    validators:
-    - status-code: 301
-    - body-contains: Moved Permanently
+    name: TestLemon landing with WWW site is up, no redirect
   - url: https://itbusina.com
     name: DNS config tests
     validators:
