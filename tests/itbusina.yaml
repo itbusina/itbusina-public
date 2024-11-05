@@ -145,19 +145,19 @@ tests:
     - dns-record-exists: "CNAME:demo-sonar:itbusina-sonarqube-demo.azurewebsites.net."
     - dns-record-exists: "CNAME:functions.apibee:functions-apibee.azurewebsites.net."
     - dns-record-exists: "CNAME:leadersboard:itbusina-leadersboard.azurewebsites.net."
-    - dns-record-exists: "CNAME:portal.apibee:apibee-portal.azurewebsites.net."
+    - dns-record-exists: "CNAME:portal.apibee:app.testlemon.com."
     - dns-record-exists: "CNAME:www:sites.framer.app."
   - url: https://itbusina.com
-    name: Test https://itbusina.com Tls11, Tls12 and Tls13
+    name: TLS settings for https://itbusina.com (Tls11, Tls12 and Tls13)
     validators:
     - tls-version-equals: Tls13
     - tls-version-equals: Tls12
     - tls-version-not-equals: Tls11
   - url: https://testlemon.com
-    name: Test https://testlemon.com Tls11, Tls12 and Tls13
+    name: TLS settings for https://testlemon.com (Tls11, Tls12 and Tls13)
     validators:
     - tls-version-equals: Tls13
-    - tls-version-not-equals: Tls12
+    - tls-version-equals: Tls12
     - tls-version-not-equals: Tls11
   - url: https://itbusina.com
     name: No links to docs.apibee.itbusina.com
