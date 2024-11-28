@@ -26,7 +26,7 @@ tests:
     name: Health check: https://hub.docker.com/v2/repositories/itbusina/bamboo-wallboard
   - url: https://hub.docker.com/v2/repositories/itbusina/dependencies-dashboard
     name: Health check: https://hub.docker.com/v2/repositories/itbusina/dependencies-dashboard
-   - url: https://api.apibee.itbusina.com/health
+  - url: https://api.apibee.itbusina.com/health
     name: Health check: https://api.apibee.itbusina.com/health
   - url: https://portal.apibee.itbusina.com/health
     name: Health check: https://portal.apibee.itbusina.com/health
