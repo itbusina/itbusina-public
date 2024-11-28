@@ -1,0 +1,55 @@
+name: TESTLEMON TESTS
+tests:
+  - url: https://www.testlemon.com
+    name: Health check: https://www.testlemon.com is healthy
+  - url: https://testlemon.com
+    name: Health check: https://testlemon.com is healthy, no redirect
+  - url: https://docs.testlemon.com
+    name: Health check: https://docs.testlemon.comn is healthy
+  - url: https://docs.testlemon.com/terms-of-use/
+    name: Health check: https://docs.testlemon.com/terms-of-use/
+  - url: https://docs.testlemon.com/privacy-policy/
+    name: Health check: https://docs.testlemon.com/privacy-policy/
+  - url: https://hub.docker.com/v2/repositories/itbusina/testlemon
+    name: Health check: https://hub.docker.com/v2/repositories/itbusina/testlemon
+  - url: https://validate.testlemon.com/api/domain?q=itbusina.com
+    name: Health check: Testlemon function 'Domain' is healthy
+  - url: https://testlemon.com
+    name: Domain name: https://testlemon.com expiration after 30d
+    validators:
+    - domain-expiration-after: 30d
+  - url: https://testlemon.com
+    name: SSL: https://testlemon.com expiration after 30d
+    validators:
+    - ssl-expiration-after: 30d
+  - url: https://testlemon.com
+    name: TLS: https://testlemon.com Tls11 is disabled, Tls12 and Tls13 are enabled
+    validators:
+    - tls-version-not-equals: Tls11
+    - tls-version-equals: Tls13
+    - tls-version-equals: Tls12
+  - url: https://testlemon.com
+    name: DMARC record exists, single record and strict policy enabled
+    validators:
+    - dns-dmarc-exists: true
+    - dns-dmarc-single-record: true
+    - dns-dmarc-strict-policy: true
+  - url: https://testlemon.com
+    name: SPF record exists
+    validators:
+    - dns-spf-exists: true
+  - url: https://testlemon.com
+    name: DKIM record exists
+    validators:
+    - dns-dkim-exists: true
+  - url: https://testlemon.com
+    name: DNS config tests
+    validators:
+    - dns-record-exists: "NS:@:ns1-01.azure-dns.com."
+    - dns-record-exists: "NS:@:ns2-01.azure-dns.net."
+    - dns-record-exists: "NS:@:ns3-01.azure-dns.org."
+    - dns-record-exists: "NS:@:ns4-01.azure-dns.info."
+    - dns-record-exists: "TXT:_gh-itbusina-o:469735be31"
+    - dns-record-exists: "CNAME:app:apibee-portal.azurewebsites.net."
+    - dns-record-exists: "CNAME:docs:itbusina.github.io."
+    - dns-record-exists: "CNAME:validate:functions-apibee.azurewebsites.net."
