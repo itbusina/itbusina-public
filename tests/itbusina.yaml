@@ -1,59 +1,59 @@
 name: IT BUSINA TESTS
 tests:
   - url: https://itbusina.com/products/apibee
-    name: Health check: https://itbusina.com/products/apibee
+    name: Health check - https://itbusina.com/products/apibee
   - url: https://itbusina.com/products/apibee/contact
-    name: Health check: https://itbusina.com/products/apibee/contact
+    name: Health check - https://itbusina.com/products/apibee/contact
   - url: https://docs.testlemon.com/terms-of-use/
-    name: Health check: https://docs.testlemon.com/terms-of-use/
+    name: Health check - https://docs.testlemon.com/terms-of-use/
   - url: https://docs.testlemon.com/privacy-policy/
-    name: Health check: https://docs.testlemon.com/privacy-policy/
+    name: Health check - https://docs.testlemon.com/privacy-policy/
   - url: https://hub.docker.com/v2/repositories/itbusina/apibee-portal
-    name: Health check: https://hub.docker.com/v2/repositories/itbusina/apibee-portal
+    name: Health check - https://hub.docker.com/v2/repositories/itbusina/apibee-portal
   - url: https://hub.docker.com/v2/repositories/itbusina/testlemon
-    name: Health check: https://hub.docker.com/v2/repositories/itbusina/testlemon
+    name: Health check - https://hub.docker.com/v2/repositories/itbusina/testlemon
   - url: https://hub.docker.com/v2/repositories/itbusina/apibee-api
-    name: Health check: https://hub.docker.com/v2/repositories/itbusina/apibee-api
+    name: Health check - https://hub.docker.com/v2/repositories/itbusina/apibee-api
   - url: https://hub.docker.com/v2/repositories/itbusina/apibee-mock
-    name: Health check: https://hub.docker.com/v2/repositories/itbusina/apibee-mock
+    name: Health check - https://hub.docker.com/v2/repositories/itbusina/apibee-mock
   - url: https://hub.docker.com/v2/repositories/itbusina/leadersboard
-    name: Health check: https://hub.docker.com/v2/repositories/itbusina/leadersboard
+    name: Health check - https://hub.docker.com/v2/repositories/itbusina/leadersboard
   - url: https://hub.docker.com/v2/repositories/itbusina/sonarqube-wallboard
-    name: Health check: https://hub.docker.com/v2/repositories/itbusina/sonarqube-wallboard
+    name: Health check - https://hub.docker.com/v2/repositories/itbusina/sonarqube-wallboard
   - url: https://hub.docker.com/v2/repositories/itbusina/jenkins-wallboard
-    name: Health check: https://hub.docker.com/v2/repositories/itbusina/jenkins-wallboard
+    name: Health check - https://hub.docker.com/v2/repositories/itbusina/jenkins-wallboard
   - url: https://hub.docker.com/v2/repositories/itbusina/bamboo-wallboard
-    name: Health check: https://hub.docker.com/v2/repositories/itbusina/bamboo-wallboard
+    name: Health check - https://hub.docker.com/v2/repositories/itbusina/bamboo-wallboard
   - url: https://hub.docker.com/v2/repositories/itbusina/dependencies-dashboard
-    name: Health check: https://hub.docker.com/v2/repositories/itbusina/dependencies-dashboard
+    name: Health check - https://hub.docker.com/v2/repositories/itbusina/dependencies-dashboard
   - url: https://api.apibee.itbusina.com/health
-    name: Health check: https://api.apibee.itbusina.com/health
+    name: Health check - https://api.apibee.itbusina.com/health
   - url: https://portal.apibee.itbusina.com/health
-    name: Health check: https://portal.apibee.itbusina.com/health
+    name: Health check - https://portal.apibee.itbusina.com/health
   - url: https://apibee-mock.itbusina.com/health
-    name: Health check: https://apibee-mock.itbusina.com/health
+    name: Health check - https://apibee-mock.itbusina.com/health
   - url: https://functions.apibee.itbusina.com/api/health
-    name: Health check: https://functions.apibee.itbusina.com/api/health
+    name: Health check - https://functions.apibee.itbusina.com/api/health
   - url: https://functions.apibee.itbusina.com/api/domain?q=itbusina.com
-    name: Health check: Testlemon function 'Domain' is healthy
+    name: Health check - Testlemon function 'Domain' is healthy
   - url: https://docs.testlemon.com
-    name: Health check: https://docs.testlemon.comn is healthy
+    name: Health check - https://docs.testlemon.comn is healthy
   - url: https://leadersboard.itbusina.com
-    name: Health check: https://leadersboard.itbusina.com is healthy
+    name: Health check - https://leadersboard.itbusina.com is healthy
   - url: https://demo-sonar.itbusina.com
-    name: Health check: https://demo-sonar.itbusina.com is healthy
+    name: Health check - https://demo-sonar.itbusina.com is healthy
   - url: https://demo-bamboo.itbusina.com
-    name: Health check: https://demo-bamboo.itbusina.com is healthy
+    name: Health check - https://demo-bamboo.itbusina.com is healthy
   - url: https://demo-dependencies.itbusina.com
-    name: Health check: https://demo-dependencies.itbusina.com is healthy
+    name: Health check - https://demo-dependencies.itbusina.com is healthy
   - url: https://demo-jenkins.itbusina.com
-    name: Health check: https://demo-jenkins.itbusina.com is healthy
+    name: Health check - https://demo-jenkins.itbusina.com is healthy
   - url: https://www.testlemon.com
-    name: Health check: https://www.testlemon.com is healthy
+    name: Health check - https://www.testlemon.com is healthy
   - url: https://testlemon.com
-    name: Health check: https://testlemon.com is healthy, no redirect
+    name: Health check - https://testlemon.com is healthy, no redirect
   - url: https://itbusina.com
-    name: SSL: https://itbusina.com expiration after 30d, Domain name expiration after 30d
+    name: SSL - https://itbusina.com expiration after 30d, Domain name expiration after 30d
     validators:
     - is-successful: true
     - ssl-expiration-after: 30d
@@ -66,43 +66,43 @@ tests:
     - status-code: 301
     - domain-expiration-after: 30d
   - url: https://portal.apibee.itbusina.com
-    name: SSL: https://portal.apibee.itbusina.com expiration after 30d
+    name: SSL - https://portal.apibee.itbusina.com expiration after 30d
     validators:
     - ssl-expiration-after: 30d
   - url: https://api.apibee.itbusina.com
-    name: SSL: https://api.apibee.itbusina.com/health expiration after 30d
+    name: SSL - https://api.apibee.itbusina.com/health expiration after 30d
     validators:
     - ssl-expiration-after: 30d
   - url: https://apibee-mock.itbusina.com
-    name: SSL: https://apibee-mock.itbusina.com expiration after 30d
+    name: SSL - https://apibee-mock.itbusina.com expiration after 30d
     validators:
     - ssl-expiration-after: 30d
   - url: https://functions.apibee.itbusina.com
-    name: SSL: https://functions.apibee.itbusina.com expiration after 30d
+    name: SSL - https://functions.apibee.itbusina.com expiration after 30d
     validators:
     - ssl-expiration-after: 30d
   - url: https://docs.testlemon.com
-    name: SSL: https://docs.testlemon.com expiration after 30d
+    name: SSL - https://docs.testlemon.com expiration after 30d
     validators:
     - ssl-expiration-after: 30d
   - url: https://leadersboard.itbusina.com
-    name: SSL: https://leadersboard.itbusina.com expiration after 30d
+    name: SSL - https://leadersboard.itbusina.com expiration after 30d
     validators:
     - ssl-expiration-after: 30d
   - url: https://demo-sonar.itbusina.com
-    name: SSL: https://demo-sonar.itbusina.com expiration after 30d
+    name: SSL - https://demo-sonar.itbusina.com expiration after 30d
     validators:
     - ssl-expiration-after: 30d
   - url: https://demo-bamboo.itbusina.com
-    name: SSL: https://demo-bamboo.itbusina.com expiration after 30d
+    name: SSL - https://demo-bamboo.itbusina.com expiration after 30d
     validators:
     - ssl-expiration-after: 30d
   - url: https://demo-dependencies.itbusina.com
-    name: SSL: https://demo-dependencies.itbusina.com expiration after 30d
+    name: SSL - https://demo-dependencies.itbusina.com expiration after 30d
     validators:
     - ssl-expiration-after: 30d
   - url: https://demo-jenkins.itbusina.com/
-    name: SSL: https://demo-jenkins.itbusina.com expiration after 30d
+    name: SSL - https://demo-jenkins.itbusina.com expiration after 30d
     validators:
     - ssl-expiration-after: 30d
   - url: https://itbusina.com
