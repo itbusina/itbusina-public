@@ -1,29 +1,29 @@
 name: TESTLEMON TESTS
 tests:
   - url: https://www.testlemon.com
-    name: Health check: https://www.testlemon.com is healthy
+    name: Health check - https://www.testlemon.com is healthy
   - url: https://testlemon.com
-    name: Health check: https://testlemon.com is healthy, no redirect
+    name: Health check - https://testlemon.com is healthy, no redirect
   - url: https://docs.testlemon.com
-    name: Health check: https://docs.testlemon.comn is healthy
+    name: Health check - https://docs.testlemon.comn is healthy
   - url: https://docs.testlemon.com/terms-of-use/
-    name: Health check: https://docs.testlemon.com/terms-of-use/
+    name: Health check - https://docs.testlemon.com/terms-of-use/
   - url: https://docs.testlemon.com/privacy-policy/
-    name: Health check: https://docs.testlemon.com/privacy-policy/
+    name: Health check - https://docs.testlemon.com/privacy-policy/
   - url: https://hub.docker.com/v2/repositories/itbusina/testlemon
-    name: Health check: https://hub.docker.com/v2/repositories/itbusina/testlemon
+    name: Health check - https://hub.docker.com/v2/repositories/itbusina/testlemon
   - url: https://validate.testlemon.com/api/domain?q=itbusina.com
-    name: Health check: Testlemon function 'Domain' is healthy
+    name: Health check - Testlemon function 'Domain' is healthy
   - url: https://testlemon.com
-    name: Domain name: https://testlemon.com expiration after 30d
+    name: Domain name - https://testlemon.com expiration after 30d
     validators:
     - domain-expiration-after: 30d
   - url: https://testlemon.com
-    name: SSL: https://testlemon.com expiration after 30d
+    name: SSL - https://testlemon.com expiration after 30d
     validators:
     - ssl-expiration-after: 30d
   - url: https://testlemon.com
-    name: TLS: https://testlemon.com Tls11 is disabled, Tls12 and Tls13 are enabled
+    name: TLS - https://testlemon.com Tls11 is disabled, Tls12 and Tls13 are enabled
     validators:
     - tls-version-not-equals: Tls11
     - tls-version-equals: Tls13
