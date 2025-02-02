@@ -30,8 +30,6 @@ tests:
     name: Health check - https://api.apibee.itbusina.com/health
   - url: https://portal.apibee.itbusina.com/health
     name: Health check - https://portal.apibee.itbusina.com/health
-  - url: https://apibee-mock.itbusina.com/health
-    name: Health check - https://apibee-mock.itbusina.com/health
   - url: https://functions.apibee.itbusina.com/api/health
     name: Health check - https://functions.apibee.itbusina.com/api/health
   - url: https://functions.apibee.itbusina.com/api/domain?q=itbusina.com
@@ -71,10 +69,6 @@ tests:
     - ssl-expiration-after: 30d
   - url: https://api.apibee.itbusina.com
     name: SSL - https://api.apibee.itbusina.com/health expiration after 30d
-    validators:
-    - ssl-expiration-after: 30d
-  - url: https://apibee-mock.itbusina.com
-    name: SSL - https://apibee-mock.itbusina.com expiration after 30d
     validators:
     - ssl-expiration-after: 30d
   - url: https://functions.apibee.itbusina.com
