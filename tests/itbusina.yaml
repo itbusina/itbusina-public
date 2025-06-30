@@ -42,7 +42,7 @@ tests:
     name: Health check - https://demo-jenkins.itbusina.com is healthy
   - url: https://www.testlemon.com
     name: Health check - https://www.testlemon.com is healthy
-  - url: https://api.testlemon.com
+  - url: https://api.testlemon.com/health
     name: Health check - https://api.testlemon.com is healthy
   - url: https://testlemon.com
     name: Health check - https://testlemon.com is healthy, no redirect
