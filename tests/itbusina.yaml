@@ -1,9 +1,5 @@
 name: IT BUSINA TESTS
 tests:
-  - url: https://itbusina.com/products/apibee
-    name: Health check - https://itbusina.com/products/apibee
-  - url: https://itbusina.com/products/apibee/contact
-    name: Health check - https://itbusina.com/products/apibee/contact
   - url: https://docs.testlemon.com/terms-of-use/
     name: Health check - https://docs.testlemon.com/terms-of-use/
   - url: https://docs.testlemon.com/privacy-policy/
@@ -28,8 +24,6 @@ tests:
     name: Health check - https://hub.docker.com/v2/repositories/itbusina/dependencies-dashboard
   - url: https://api.apibee.itbusina.com/health
     name: Health check - https://api.apibee.itbusina.com/health
-  - url: https://portal.apibee.itbusina.com/health
-    name: Health check - https://portal.apibee.itbusina.com/health
   - url: https://functions.apibee.itbusina.com/api/health
     name: Health check - https://functions.apibee.itbusina.com/api/health
   - url: https://functions.apibee.itbusina.com/api/domain?q=itbusina.com
@@ -48,6 +42,8 @@ tests:
     name: Health check - https://demo-jenkins.itbusina.com is healthy
   - url: https://www.testlemon.com
     name: Health check - https://www.testlemon.com is healthy
+  - url: https://api.testlemon.com
+    name: Health check - https://api.testlemon.com is healthy
   - url: https://testlemon.com
     name: Health check - https://testlemon.com is healthy, no redirect
   - url: https://itbusina.com
