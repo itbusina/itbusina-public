@@ -22,12 +22,6 @@ tests:
     name: Health check - https://hub.docker.com/v2/repositories/itbusina/bamboo-wallboard
   - url: https://hub.docker.com/v2/repositories/itbusina/dependencies-dashboard
     name: Health check - https://hub.docker.com/v2/repositories/itbusina/dependencies-dashboard
-  - url: https://api.apibee.itbusina.com/health
-    name: Health check - https://api.apibee.itbusina.com/health
-  - url: https://functions.apibee.itbusina.com/api/health
-    name: Health check - https://functions.apibee.itbusina.com/api/health
-  - url: https://functions.apibee.itbusina.com/api/domain?q=itbusina.com
-    name: Health check - Testlemon function 'Domain' is healthy
   - url: https://docs.testlemon.com
     name: Health check - https://docs.testlemon.comn is healthy
   - url: https://leadersboard.itbusina.com
@@ -59,18 +53,6 @@ tests:
     validators:
     - status-code: 301
     - domain-expiration-after: 30d
-  - url: https://portal.apibee.itbusina.com
-    name: SSL - https://portal.apibee.itbusina.com expiration after 30d
-    validators:
-    - ssl-expiration-after: 30d
-  - url: https://api.apibee.itbusina.com
-    name: SSL - https://api.apibee.itbusina.com/health expiration after 30d
-    validators:
-    - ssl-expiration-after: 30d
-  - url: https://functions.apibee.itbusina.com
-    name: SSL - https://functions.apibee.itbusina.com expiration after 30d
-    validators:
-    - ssl-expiration-after: 30d
   - url: https://docs.testlemon.com
     name: SSL - https://docs.testlemon.com expiration after 30d
     validators:
@@ -119,8 +101,6 @@ tests:
     validators:
     - dns-record-exists: "A:@:35.71.142.77"
     - dns-record-exists: "A:@:52.223.52.2"
-    - dns-record-exists: "A:apibee:15.197.225.128"
-    - dns-record-exists: "A:apibee:3.33.251.168"
     - dns-record-exists: "NS:@:ns51.domaincontrol.com."
     - dns-record-exists: "NS:@:ns52.domaincontrol.com."
     - dns-record-exists: "TXT:@:openai-domain-verification=dv-QcsNbSXgPDxhulMtSm9jRlnZ"
@@ -132,16 +112,11 @@ tests:
     - dns-record-exists: "TXT:_gh-itbusina-o:beb592ffae"
     - dns-record-exists: "TXT:_gh-itbusina-o.www:d61853241b"
     - dns-record-exists: "TXT:_github-pages-challenge-itbusina:36dd2bf1b24e6ac5531843f19a3438"
-    - dns-record-exists: "CNAME:api.apibee:apibee-api.azurewebsites.net."
-    - dns-record-exists: "CNAME:apibee-mock:apibee-mock.azurewebsites.net."
     - dns-record-exists: "CNAME:demo-bamboo:itbusina-bamboo-demo.azurewebsites.net."
     - dns-record-exists: "CNAME:demo-dependencies:itbusina-dependencies-demo.azurewebsites.net."
     - dns-record-exists: "CNAME:demo-jenkins:itbusina-jenkins-demo.azurewebsites.net."
     - dns-record-exists: "CNAME:demo-sonar:itbusina-sonarqube-demo.azurewebsites.net."
-    - dns-record-exists: "CNAME:functions.apibee:functions-apibee.azurewebsites.net."
     - dns-record-exists: "CNAME:leadersboard:itbusina-leadersboard.azurewebsites.net."
-    - dns-record-exists: "CNAME:portal.apibee:app.testlemon.com."
-    - dns-record-exists: "CNAME:www:sites.framer.app."
   - url: https://itbusina.com
     name: TLS settings for https://itbusina.com (Tls11, Tls12 and Tls13)
     validators:
@@ -154,11 +129,3 @@ tests:
     - tls-version-equals: Tls13
     - tls-version-equals: Tls12
     - tls-version-not-equals: Tls11
-  - url: https://itbusina.com
-    name: No links to docs.apibee.itbusina.com
-    validators:
-    - sitemap-each-body-not-contains: docs.apibee.itbusina.com
-  - url: https://itbusina.com
-    name: No links to portal.apibee.itbusina.com
-    validators:
-    - sitemap-each-body-not-contains: portal.apibee.itbusina.com
