@@ -99,8 +99,7 @@ tests:
   - url: https://itbusina.com
     name: DNS config tests
     validators:
-    - dns-record-exists: "A:@:35.71.142.77"
-    - dns-record-exists: "A:@:52.223.52.2"
+    - dns-record-exists: "A:@:20.36.155.201"
     - dns-record-exists: "NS:@:ns51.domaincontrol.com."
     - dns-record-exists: "NS:@:ns52.domaincontrol.com."
     - dns-record-exists: "TXT:@:openai-domain-verification=dv-QcsNbSXgPDxhulMtSm9jRlnZ"
