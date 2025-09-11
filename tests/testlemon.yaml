@@ -45,11 +45,8 @@ tests:
   - url: https://testlemon.com
     name: DNS config tests
     validators:
-    - dns-record-exists: "NS:@:ns1-01.azure-dns.com."
-    - dns-record-exists: "NS:@:ns2-01.azure-dns.net."
-    - dns-record-exists: "NS:@:ns3-01.azure-dns.org."
-    - dns-record-exists: "NS:@:ns4-01.azure-dns.info."
-    - dns-record-exists: "TXT:_gh-itbusina-o:469735be31"
+    - dns-record-exists: "NS:@:henrik.ns.cloudflare.com."
+    - dns-record-exists: "NS:@:kelly.ns.cloudflare.com."
     - dns-record-exists: "CNAME:app:apibee-portal.azurewebsites.net."
     - dns-record-exists: "CNAME:docs:itbusina.github.io."
     - dns-record-exists: "CNAME:validate:functions-apibee.azurewebsites.net."
