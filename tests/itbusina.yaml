@@ -46,7 +46,7 @@ tests:
     - is-successful: true
     - ssl-expiration-after: 30d
     - domain-expiration-after: 30d
-  - url: http://itbusina.net
+  - url: https://itbusina.net
     name: http://itbusina.net returns 301, domain name expiration after 30d
     headers:
     - 'User-Agent:testlemon'
@@ -99,9 +99,8 @@ tests:
   - url: https://itbusina.com
     name: DNS config tests
     validators:
-    - dns-record-exists: "A:@:20.36.155.201"
-    - dns-record-exists: "NS:@:ns51.domaincontrol.com."
-    - dns-record-exists: "NS:@:ns52.domaincontrol.com."
+    - dns-record-exists: "NS:@:henrik.ns.cloudflare.com."
+    - dns-record-exists: "NS:@:kelly.ns.cloudflare.com."
     - dns-record-exists: "TXT:@:openai-domain-verification=dv-QcsNbSXgPDxhulMtSm9jRlnZ"
     - dns-record-exists: "TXT:@:seobility=56280a0d72a7d70133c1ed7a3add3d63"
     - dns-record-exists: "TXT:@:google-site-verification=DHYt7xmEfOvLAacbT-YM_JZaXvrJvyytpyT9K1hS2Ek"
