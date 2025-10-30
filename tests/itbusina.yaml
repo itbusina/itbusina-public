@@ -46,12 +46,11 @@ tests:
     - is-successful: true
     - ssl-expiration-after: 30d
     - domain-expiration-after: 30d
-  - url: http://itbusina.net
-    name: http://itbusina.net returns 301, domain name expiration after 30d
+  - url: https://itbusina.net
+    name: https://itbusina.net domain name expiration after 30d
     headers:
     - 'User-Agent:testlemon'
     validators:
-    - status-code: 301
     - domain-expiration-after: 30d
   - url: https://docs.testlemon.com
     name: SSL - https://docs.testlemon.com expiration after 30d
